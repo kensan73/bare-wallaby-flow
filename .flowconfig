@@ -1,0 +1,20 @@
+[include]
+src
+tests
+
+[libs]
+flow-typed
+
+[ignore]
+<PROJECT_ROOT>/dist
+<PROJECT_ROOT>/node_modules
+<PROJECT_ROOT>/assets/public/scripts
+
+[options]
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnoreLine
+module.system.node.resolve_dirname=src
+
+[lints]
+all=warn
+untyped-type-import=error
+sketchy-null=off
